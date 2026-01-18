@@ -1,0 +1,15 @@
+import time
+timestamp = time.strftime('%H:%M:%S')
+print(timestamp)
+timestamphour= int(time.strftime('%H'))
+
+timestampmin= time.strftime('%M')
+
+timestampsec = time.strftime('%S')
+if ( timestamphour < 12):
+	print ("Good Morning, Mate its ", timestamp)
+elif ( timestamphour > 12 and timestamphour < 18):
+	print ("Good Afternoon, Mate its ", timestamp)
+elif ( timestamphour > 18):
+	print ("Good Evening, Mate its ", timestamp)
+# https://docs.python.org/3/library/time.html#time.strftime
